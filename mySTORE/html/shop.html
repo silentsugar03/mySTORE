@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/shop.css">
-    <title>Shop</title>
+    <title>mySTORE | Shop</title>
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +18,160 @@
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
+            <button class="cart-pill" type="button">Cart <span id="cart-count">0</span></button>
         </div>
     </nav>
+
+    <main class="shop-container">
+        <header class="shop-header">
+            <p class="eyebrow">New collection</p>
+            <h1>Fashion for every style</h1>
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Search products...">
+                <button class="search-button" type="button">Search</button>
+            </div>
+        </header>
+
+        <div class="shop-layout">
+            <div class="catalog">
+                <section class="category-section">
+                    <div class="section-title">
+                        <h2>Woman Wear</h2>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card" data-name="Floral Dress" data-price="85">
+                            <div class="product-image product-woman-1"></div>
+                            <div class="product-info">
+                                <span class="product-category">Woman Wear</span>
+                                <h3>Floral Dress</h3>
+                                <div class="product-meta">
+                                    <span class="price">$85</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-name="Elegant Blazer" data-price="120">
+                            <div class="product-image product-woman-2"></div>
+                            <div class="product-info">
+                                <span class="product-category">Woman Wear</span>
+                                <h3>Elegant Blazer</h3>
+                                <div class="product-meta">
+                                    <span class="price">$120</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="category-section">
+                    <div class="section-title">
+                        <h2>Man Wear</h2>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card" data-name="Classic Shirt" data-price="65">
+                            <div class="product-image product-man-1"></div>
+                            <div class="product-info">
+                                <span class="product-category">Man Wear</span>
+                                <h3>Classic Shirt</h3>
+                                <div class="product-meta">
+                                    <span class="price">$65</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-name="Casual Jacket" data-price="110">
+                            <div class="product-image product-man-2"></div>
+                            <div class="product-info">
+                                <span class="product-category">Man Wear</span>
+                                <h3>Casual Jacket</h3>
+                                <div class="product-meta">
+                                    <span class="price">$110</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="category-section">
+                    <div class="section-title">
+                        <h2>Wrist Watch</h2>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card" data-name="Rose Gold Watch" data-price="150">
+                            <div class="product-image product-watch-1"></div>
+                            <div class="product-info">
+                                <span class="product-category">Wrist Watch</span>
+                                <h3>Rose Gold Watch</h3>
+                                <div class="product-meta">
+                                    <span class="price">$150</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-name="Smart Watch" data-price="180">
+                            <div class="product-image product-watch-2"></div>
+                            <div class="product-info">
+                                <span class="product-category">Wrist Watch</span>
+                                <h3>Smart Watch</h3>
+                                <div class="product-meta">
+                                    <span class="price">$180</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="category-section">
+                    <div class="section-title">
+                        <h2>Shoes</h2>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card" data-name="Sneakers" data-price="90">
+                            <div class="product-image product-shoe-1"></div>
+                            <div class="product-info">
+                                <span class="product-category">Shoes</span>
+                                <h3>Sneakers</h3>
+                                <div class="product-meta">
+                                    <span class="price">$90</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card" data-name="Leather Boots" data-price="120">
+                            <div class="product-image product-shoe-2"></div>
+                            <div class="product-info">
+                                <span class="product-category">Shoes</span>
+                                <h3>Leather Boots</h3>
+                                <div class="product-meta">
+                                    <span class="price">$120</span>
+                                    <button class="add-to-cart" type="button">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="cart-panel">
+                <h3>Your Cart</h3>
+                <ul id="cart-items">
+                    <li class="empty-cart">Cart is empty</li>
+                </ul>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cart-total">$0.00</strong>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../js/shop.js"></script>
 </body>
 </html>
