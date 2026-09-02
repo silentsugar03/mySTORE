@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <title>Shop - mySTORE</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">mySTORE</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="shop-header">
+            <h1>Our Shop</h1>
+            <h3>Premium Fashion & Apparel</h3>
+            <p>Browse our complete collection of stylish and affordable clothing</p>
+        </div>
+
+        <div class="shop-filters">
+            <div class="filter-section">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="">All Products</option>
+                    <option value="mens">Men's Wear</option>
+                    <option value="womens">Women's Wear</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqGeUBya4vGcYfa-HfmN-SJnne022YcvKLpMBD1T89mQ&s=10"
+                    alt="Female wears" class="product-img">
+                <h3>Female Wears Collection</h3>
+                <p class="product-price">$29.99</p>
+                <p>Stylish and comfortable</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/webp;base64,UklGRoIPAABXRUJQVlA4IHYPAAAQRgCdASq1ALUAPkEcjEQioaESmb24KAQEtLdwYAAzAGVH4/wr/MeH/8//RvCqEKn4BYyARrEiFKN4BYCARARARCAP4ARgQBqQWgAu//HvwORQCnmSPsCRXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQH//2Q=="
+                    alt="Men's wears" class="product-img">
+                <h3>Men's Classic Collection</h3>
+                <p class="product-price">$34.99</p>
+                <p>Premium quality and modern style</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQERUSExMWFhUXFx0XGBcYGBgaFxcYHxgYHRcYFx4YH0koJSUlExsZHx8gIyYnKSopKysrMy0qNS0BCgoKDg0OGxAQGi0lHSYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQEAxAMBIgACEQEDEQH/xAA="
+                    alt="Accessories" class="product-img">
+                <h3>Fashion Accessories</h3>
+                <p class="product-price">$14.99</p>
+                <p>Complete your look with style</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqGeUBya4vGcYfa-HfmN-SJnne022YcvKLpMBD1T89mQ&s=10"
+                    alt="Summer Collection" class="product-img">
+                <h3>Summer Collection</h3>
+                <p class="product-price">$24.99</p>
+                <p>Light and breathable fabrics</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/webp;base64,UklGRoIPAABXRUJQVlA4IHYPAAAQRgCdASq1ALUAPkEcjEQioaESmb24KAQEtLdwYAAzAGVH4/wr/MeH/8//RvCqEKn4BYyARrEiFKN4BYCARARARCAP4ARgQBqQWgAu//HvwORQCnmSPsCRXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQFBXMEkBQVzBJAUFcwSQH//2Q=="
+                    alt="Winter Collection" class="product-img">
+                <h3>Winter Collection</h3>
+                <p class="product-price">$39.99</p>
+                <p>Warm and cozy designs</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQERUSExMWFhUXFx0XGBcYGBgaFxcYHxgYHRcYFx4YH0koJSUlExsZHx8gIyYnKSopKysrMy0qNS0BCgoKDg0OGxAQGi0lHSYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQEAxAMBIgACEQEDEQH/xAA="
+                    alt="Casual Wear" class="product-img">
+                <h3>Casual Wear Line</h3>
+                <p class="product-price">$19.99</p>
+                <p>Comfortable everyday clothing</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 mySTORE. All rights reserved. | Spend less, get and enjoy more!</p>
+    </footer>
+
+    <script src="js/shop.js"></script>
+</body>
+
+</html>
